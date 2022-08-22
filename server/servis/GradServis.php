@@ -20,6 +20,3 @@ class GradServis{
         $this->broker->izvrsiIzmenu("delete from grad where id=".$id);
     }
 }
-
-
-?>
