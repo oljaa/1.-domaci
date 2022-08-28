@@ -37,8 +37,8 @@ class FestivalServis
     public function kreiraj($festivalDto)
     {
         $this->broker->izvrsiIzmenu("insert into festival(naziv,opis,pocetak,kraj,adresa,tip,grad)" .
-            " values('" . $festivalDto['naziv'] . "','" . $festivalDto['opis'] . "'," . $festivalDto['pocetak'] .
-            ",'" . $festivalDto['kraj'] . "','" . $festivalDto['adresa'] . "'," . $festivalDto['tip'] . "," . $festivalDto['grad'] . ")");
+            " values('" . $festivalDto['naziv'] . "','" . $festivalDto['opis'] . "','" . $festivalDto['pocetak'] .
+            "','" . $festivalDto['kraj'] . "','" . $festivalDto['adresa'] . "'," . $festivalDto['tip'] . "," . $festivalDto['grad'] . ")");
     }
     public function izmeni($id, $festivalDto)
     {
